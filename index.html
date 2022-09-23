@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body class="bg-hero h-screen bg-cover bg-center bg-no-repeat">
+    <header
+      class="header relative h-24 bg-black bg-opacity-60 backdrop-filter backdrop-blur-md flex items-center justify-center"
+    >
+      <div class="container mx-auto text-center">
+        <h1
+          class="text-white text-xl sm:text-2xl md:text-4xl font-bold uppercase"
+        >
+          Todo App
+        </h1>
+      </div>
+    </header>
+
+    <section class="hero px-8 md:px-16 py-8">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16 items-center justify-center"
+      >
+        <div
+          class="left-section p-4 bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
+        >
+          <form action="" class="flex flex-col gap-4">
+            <div class="flex flex-col gap-2">
+              <label for="task" class="text-white">Task</label>
+              <input type="text" class="p-2" name="task" id="task" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="description" class="text-white">Description</label>
+              <input
+                type="text"
+                class="p-2"
+                name="description"
+                id="description"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <input
+                class="bg-green-800 text-white px-4 py-2 rounded"
+                type="submit"
+                name="Task"
+                value="Create task"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="right-section lg:col-span-2">
+          <div class="container mx-auto">
+            <div class="cards flex flex-col gap-8 h-96 overflow-y-scroll">
+              <!-- card 1 -->
+              <div
+                class="card flex flex-col gap-2 sm:gap-4 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
+              >
+                <h1 class="text-xl sm:text-2xl font-bold">
+                  Data Structure and Algorithm
+                </h1>
+                <p class="text-sm sm:text-base">
+                  I will learn about stack, queue and 5 questions
+                </p>
+              </div>
+
+              <!-- card 2 -->
+              <div
+                class="card flex flex-col gap-2 sm:gap-4 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
+              >
+                <h1 class="text-xl sm:text-2xl font-bold">
+                  Data Structure and Algorithm
+                </h1>
+                <p class="text-sm sm:text-base">
+                  I will learn about stack, queue and 5 questions
+                </p>
+              </div>
+
+              <div
+                class="card flex flex-col gap-2 sm:gap-4 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
+              >
+                <h1 class="text-xl sm:text-2xl font-bold">
+                  Data Structure and Algorithm
+                </h1>
+                <p class="text-sm sm:text-base">
+                  I will learn about stack, queue and 5 questions
+                </p>
+              </div>
+
+              <div
+                class="card flex flex-col gap-2 sm:gap-4 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
+              >
+                <h1 class="text-xl sm:text-2xl font-bold">
+                  Data Structure and Algorithm
+                </h1>
+                <p class="text-sm sm:text-base">
+                  I will learn about stack, queue and 5 questions
+                </p>
+              </div>
+              <div
+                class="card flex flex-col gap-2 sm:gap-4 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
+              >
+                <h1 class="text-xl sm:text-2xl font-bold">
+                  Data Structure and Algorithm
+                </h1>
+                <p class="text-sm sm:text-base">
+                  I will learn about stack, queue and 5 questions
+                </p>
+              </div>
+
+              <!-- cards end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
