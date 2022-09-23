@@ -17,7 +17,7 @@
   </head>
   <body class="bg-hero h-screen bg-cover bg-center bg-no-repeat bg-fixed">
     <header
-      class="header sticky top-0 z-20 h-24 bg-black bg-opacity-60 backdrop-filter backdrop-blur-md flex items-center justify-center"
+      class="header sticky top-0 z-20 h-12 md:h-20 bg-black bg-opacity-60 backdrop-filter backdrop-blur-md flex items-center justify-center"
     >
       <div class="container mx-auto text-center">
         <h1
@@ -33,7 +33,7 @@
         <h1 class="text-white text-3xl sm:text-4xl md:text-6xl font-bold">
           My Day
         </h1>
-        <p class="text-white font-bold">Friday, September 23</p>
+        <p class="hero-p text-white font-bold">Friday, September 23</p>
       </div>
       <div
         class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16 items-start justify-center"
@@ -44,7 +44,7 @@
           <form action="" class="flex flex-col gap-4">
             <div class="flex flex-col gap-2">
               <label for="task" class="text-white">Task</label>
-              <input type="text" class="p-2" name="task" id="task" />
+              <input type="text" class="p-2" required name="task" id="task" />
             </div>
             <div class="flex flex-col gap-2">
               <label for="description" class="text-white">Description</label>
@@ -53,11 +53,12 @@
                 class="p-2"
                 name="description"
                 id="description"
+                required
               />
             </div>
             <div class="flex items-center justify-center">
               <input
-                class="bg-green-800 text-white px-4 py-2 rounded"
+                class="btn-task bg-green-800 text-white px-4 py-2 rounded"
                 type="submit"
                 name="Task"
                 value="Create task"
@@ -66,10 +67,17 @@
           </form>
         </div>
         <div class="right-section lg:col-span-2">
-          <div class="container mx-auto">
+          <div class="right-section-head text-center">
+            <h1
+              class="text-white p-4 bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded text-2xl sm:text-4xl md:text-5xl font-bold"
+            >
+              No new task
+            </h1>
+          </div>
+          <div class="container task-menu hidden mx-auto">
             <div class="cards flex flex-col gap-8 h-96 overflow-y-scroll">
               <!-- card 1 -->
-              <div
+              <!-- <div
                 class="card flex justify-between gap-2 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
               >
                 <div class="innercard flex flex-1 flex-col gap-2">
@@ -91,103 +99,7 @@
                     ></ion-icon>
                   </div>
                 </div>
-              </div>
-
-              <!-- card 2 -->
-              <div
-                class="card flex justify-between gap-2 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
-              >
-                <div class="innercard flex flex-1 flex-col gap-2">
-                  <h1 class="text-xl sm:text-2xl font-bold">
-                    Data Structure and Algorithm
-                  </h1>
-                  <p class="text-sm sm:text-base">
-                    I will learn about stack, queue and 5 questions
-                  </p>
-                </div>
-                <div class="flex flex-col justify-between items-end gap-4">
-                  <ion-icon class="w-6 h-6" name="star-outline"></ion-icon>
-                  <ion-icon class="w-6 h-6 hidden" name="star"></ion-icon>
-                  <div class="flex items-center gap-4">
-                    <p><span>09/09/2022</span></p>
-                    <ion-icon
-                      class="w-6 h-6"
-                      name="trash-bin-outline"
-                    ></ion-icon>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="card flex justify-between gap-2 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
-              >
-                <div class="innercard flex flex-1 flex-col gap-2">
-                  <h1 class="text-xl sm:text-2xl font-bold">
-                    Data Structure and Algorithm
-                  </h1>
-                  <p class="text-sm sm:text-base">
-                    I will learn about stack, queue and 5 questions
-                  </p>
-                </div>
-                <div class="flex flex-col justify-between items-end gap-4">
-                  <ion-icon class="w-6 h-6" name="star-outline"></ion-icon>
-                  <ion-icon class="w-6 h-6 hidden" name="star"></ion-icon>
-                  <div class="flex items-center gap-4">
-                    <p><span>09/09/2022</span></p>
-                    <ion-icon
-                      class="w-6 h-6"
-                      name="trash-bin-outline"
-                    ></ion-icon>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="card flex justify-between gap-2 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
-              >
-                <div class="innercard flex flex-1 flex-col gap-2">
-                  <h1 class="text-xl sm:text-2xl font-bold">
-                    Data Structure and Algorithm
-                  </h1>
-                  <p class="text-sm sm:text-base">
-                    I will learn about stack, queue and 5 questions
-                  </p>
-                </div>
-                <div class="flex flex-col justify-between items-end gap-4">
-                  <ion-icon class="w-6 h-6" name="star-outline"></ion-icon>
-                  <ion-icon class="w-6 h-6 hidden" name="star"></ion-icon>
-                  <div class="flex items-center gap-4">
-                    <p><span>09/09/2022</span></p>
-                    <ion-icon
-                      class="w-6 h-6"
-                      name="trash-bin-outline"
-                    ></ion-icon>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="card flex justify-between gap-2 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
-              >
-                <div class="innercard flex flex-1 flex-col gap-2">
-                  <h1 class="text-xl sm:text-2xl font-bold">
-                    Data Structure and Algorithm
-                  </h1>
-                  <p class="text-sm sm:text-base">
-                    I will learn about stack, queue and 5 questions
-                  </p>
-                </div>
-                <div class="flex flex-col justify-between items-end gap-4">
-                  <ion-icon class="w-6 h-6" name="star-outline"></ion-icon>
-                  <ion-icon class="w-6 h-6 hidden" name="star"></ion-icon>
-                  <div class="flex items-center gap-4">
-                    <p><span>09/09/2022</span></p>
-                    <ion-icon
-                      class="w-6 h-6"
-                      name="trash-bin-outline"
-                    ></ion-icon>
-                  </div>
-                </div>
-              </div>
+              </div> -->
 
               <!-- cards end -->
             </div>
@@ -195,5 +107,7 @@
         </div>
       </div>
     </section>
+
+    <script src="/app.js"></script>
   </body>
 </html>
