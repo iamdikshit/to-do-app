@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do App</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <link rel="stylesheet" href="/dist/output.css" />
   </head>
-  <body class="bg-hero h-screen bg-cover bg-center bg-no-repeat">
+  <body class="bg-hero h-screen bg-cover bg-center bg-no-repeat bg-fixed">
     <header
-      class="header relative h-24 bg-black bg-opacity-60 backdrop-filter backdrop-blur-md flex items-center justify-center"
+      class="header sticky top-0 z-20 h-24 bg-black bg-opacity-60 backdrop-filter backdrop-blur-md flex items-center justify-center"
     >
       <div class="container mx-auto text-center">
         <h1
@@ -20,9 +28,9 @@
       </div>
     </header>
 
-    <section class="hero px-8 md:px-16 py-8">
+    <section class="hero px-8 md:px-16 py-16">
       <div
-        class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16 items-center justify-center"
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16 items-start justify-center"
       >
         <div
           class="left-section p-4 bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
@@ -53,63 +61,126 @@
         </div>
         <div class="right-section lg:col-span-2">
           <div class="container mx-auto">
-            <div
-              class="cards flex flex-col gap-8 h-80 sm:h-96 overflow-y-scroll"
-            >
+            <div class="cards flex flex-col gap-8 h-96 overflow-y-scroll">
               <!-- card 1 -->
               <div
-                class="card flex flex-col gap-2 sm:gap-4 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
+                class="card flex justify-between gap-2 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
               >
-                <h1 class="text-xl sm:text-2xl font-bold">
-                  Data Structure and Algorithm
-                </h1>
-                <p class="text-sm sm:text-base">
-                  I will learn about stack, queue and 5 questions
-                </p>
+                <div class="innercard flex flex-1 flex-col gap-2">
+                  <h1 class="text-xl sm:text-2xl font-bold">
+                    Data Structure and Algorithm
+                  </h1>
+                  <p class="text-sm sm:text-base">
+                    I will learn about stack, queue and 5 questions
+                  </p>
+                </div>
+                <div class="flex flex-col justify-center items-end gap-4">
+                  <ion-icon class="w-6 h-6" name="star-outline"></ion-icon>
+                  <ion-icon class="w-6 h-6 hidden" name="star"></ion-icon>
+                  <div class="flex items-center gap-4">
+                    <p><span>09/09/2022</span></p>
+                    <ion-icon
+                      class="w-6 h-6"
+                      name="trash-bin-outline"
+                    ></ion-icon>
+                  </div>
+                </div>
               </div>
 
               <!-- card 2 -->
               <div
-                class="card flex flex-col gap-2 sm:gap-4 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
+                class="card flex justify-between gap-2 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
               >
-                <h1 class="text-xl sm:text-2xl font-bold">
-                  Data Structure and Algorithm
-                </h1>
-                <p class="text-sm sm:text-base">
-                  I will learn about stack, queue and 5 questions
-                </p>
+                <div class="innercard flex flex-1 flex-col gap-2">
+                  <h1 class="text-xl sm:text-2xl font-bold">
+                    Data Structure and Algorithm
+                  </h1>
+                  <p class="text-sm sm:text-base">
+                    I will learn about stack, queue and 5 questions
+                  </p>
+                </div>
+                <div class="flex flex-col justify-center items-end gap-4">
+                  <ion-icon class="w-6 h-6" name="star-outline"></ion-icon>
+                  <ion-icon class="w-6 h-6 hidden" name="star"></ion-icon>
+                  <div class="flex items-center gap-4">
+                    <p><span>09/09/2022</span></p>
+                    <ion-icon
+                      class="w-6 h-6"
+                      name="trash-bin-outline"
+                    ></ion-icon>
+                  </div>
+                </div>
               </div>
 
               <div
-                class="card flex flex-col gap-2 sm:gap-4 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
+                class="card flex justify-between gap-2 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
               >
-                <h1 class="text-xl sm:text-2xl font-bold">
-                  Data Structure and Algorithm
-                </h1>
-                <p class="text-sm sm:text-base">
-                  I will learn about stack, queue and 5 questions
-                </p>
+                <div class="innercard flex flex-1 flex-col gap-2">
+                  <h1 class="text-xl sm:text-2xl font-bold">
+                    Data Structure and Algorithm
+                  </h1>
+                  <p class="text-sm sm:text-base">
+                    I will learn about stack, queue and 5 questions
+                  </p>
+                </div>
+                <div class="flex flex-col justify-center items-end gap-4">
+                  <ion-icon class="w-6 h-6" name="star-outline"></ion-icon>
+                  <ion-icon class="w-6 h-6 hidden" name="star"></ion-icon>
+                  <div class="flex items-center gap-4">
+                    <p><span>09/09/2022</span></p>
+                    <ion-icon
+                      class="w-6 h-6"
+                      name="trash-bin-outline"
+                    ></ion-icon>
+                  </div>
+                </div>
               </div>
 
               <div
-                class="card flex flex-col gap-2 sm:gap-4 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
+                class="card flex justify-between gap-2 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
               >
-                <h1 class="text-xl sm:text-2xl font-bold">
-                  Data Structure and Algorithm
-                </h1>
-                <p class="text-sm sm:text-base">
-                  I will learn about stack, queue and 5 questions
-                </p>
+                <div class="innercard flex flex-1 flex-col gap-2">
+                  <h1 class="text-xl sm:text-2xl font-bold">
+                    Data Structure and Algorithm
+                  </h1>
+                  <p class="text-sm sm:text-base">
+                    I will learn about stack, queue and 5 questions
+                  </p>
+                </div>
+                <div class="flex flex-col justify-center items-end gap-4">
+                  <ion-icon class="w-6 h-6" name="star-outline"></ion-icon>
+                  <ion-icon class="w-6 h-6 hidden" name="star"></ion-icon>
+                  <div class="flex items-center gap-4">
+                    <p><span>09/09/2022</span></p>
+                    <ion-icon
+                      class="w-6 h-6"
+                      name="trash-bin-outline"
+                    ></ion-icon>
+                  </div>
+                </div>
               </div>
               <div
-                class="card flex flex-col gap-2 sm:gap-4 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
+                class="card flex justify-between gap-2 px-4 py-6 text-white bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded"
               >
-                <h1 class="text-xl sm:text-2xl font-bold">
-                  Data Structure and Algorithm
-                </h1>
-                <p class="text-sm sm:text-base">
-                  I will learn about stack, queue and 5 questions
-                </p>
+                <div class="innercard flex flex-1 flex-col gap-2">
+                  <h1 class="text-xl sm:text-2xl font-bold">
+                    Data Structure and Algorithm
+                  </h1>
+                  <p class="text-sm sm:text-base">
+                    I will learn about stack, queue and 5 questions
+                  </p>
+                </div>
+                <div class="flex flex-col justify-center items-end gap-4">
+                  <ion-icon class="w-6 h-6" name="star-outline"></ion-icon>
+                  <ion-icon class="w-6 h-6 hidden" name="star"></ion-icon>
+                  <div class="flex items-center gap-4">
+                    <p><span>09/09/2022</span></p>
+                    <ion-icon
+                      class="w-6 h-6"
+                      name="trash-bin-outline"
+                    ></ion-icon>
+                  </div>
+                </div>
               </div>
 
               <!-- cards end -->
