@@ -776,6 +776,10 @@ video {
   padding-bottom: 4rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -796,6 +800,16 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -842,6 +856,11 @@ video {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -853,6 +872,10 @@ video {
     gap: 4rem;
   }
 
+  .md\:gap-4 {
+    gap: 1rem;
+  }
+
   .md\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -861,6 +884,11 @@ video {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
